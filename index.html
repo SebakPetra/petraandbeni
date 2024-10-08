@@ -1,1 +1,82 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esküvői Meghívó</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #d6336c;
+        }
+
+        .form-group {
+            margin: 15px 0;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #d6336c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a62853;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Esküvői Meghívó</h1>
+        <p>Szeretettel meghívunk az esküvőnkre!</p>
+        <p>Dátum: 2026. 06. 06.</p>
+        <p>Helyszín: Arló, Suvadás liget</p>
+
+        <h2>RSVP</h2>
+        <form action="https://formspree.io/f/your_form_id" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Neved" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email címed" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="guests" placeholder="Vendégek száma" required>
+            </div>
+            <button type="submit">Küldés</button>
+        </form>
+    </div>
+
+</body>
+</html>
